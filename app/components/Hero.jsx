@@ -41,7 +41,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative min-h-[70vh] lg:min-h-[92vh] w-full flex items-center justify-center py-16 lg:py-0 overflow-hidden bg-gradient-to-br from-[#191C26] via-[#23263a] to-[#111319]"
+            className="relative min-h-[70vh] lg:min-h-[92vh] w-full flex items-center justify-center py-20 lg:py-0 overflow-hidden bg-gradient-to-br from-[#191C26] via-[#23263a] to-[#111319]"
         >
             {/* Animated awe-struck blob */}
             <div
@@ -61,7 +61,7 @@ export default function Hero() {
                 }}
                 aria-hidden="true"
             />
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="flex flex-col items-center justify-center w-full my-10">
                 <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-4xl lg:max-w-6xl mx-auto gap-12 lg:gap-20 z-10 px-[10px] md:px-8 lg:px-[120px] xl:px-0">
                     {/* Left Content */}
                     <div className="flex-1 flex flex-col items-center lg:items-start justify-center max-w-2xl text-center lg:text-left">
@@ -72,7 +72,7 @@ export default function Hero() {
                         </div>
                         {/* Main Heading */}
                         <h1 className="font-extrabold mb-2 leading-tight tracking-tight relative text-[clamp(2.2rem,6vw,4.5rem)] text-[#F5F6FA]">
-                            Craft Design <br className="hidden sm:block" />
+                            Bespoke Business <br className="hidden sm:block" />
                             Solutions
                             <span className="text-[#DC4242] align-super text-5xl ml-1">.</span>
                         </h1>
