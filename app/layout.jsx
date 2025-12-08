@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-X446Z72C6Z"
           strategy="afterInteractive"
         />
@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-X446Z72C6Z');
           `}
-        </Script>
+        </Script> */}
         <Navbar/>
         {children}
       </body>
