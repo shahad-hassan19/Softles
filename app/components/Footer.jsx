@@ -16,7 +16,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-[#18181B] text-white pt-12 pb-6 px-4 md:px-16">
+        <footer className="snap-start bg-[#18181B] text-white pt-5 sm:pt-12 pb-6 px-5 md:px-16">
             <div className="flex flex-col gap-5 w-full max-w-7xl mx-auto border-b border-[#27272A] pb-10">
                 <Link href="/">
                     <Image src={"/SoftLes.png"} alt="Logo" width={0} height={0} sizes="(max-width: 768px) 40vw, (max-width: 1024px) 50vw, 33vw" className="object-cover overflow-hidden min-w-min h-[54px]"/>
@@ -31,8 +31,8 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col gap-y-3 w-full">
                         <h3 className="font-semibold text-base mb-1">Contact</h3>
-                        <div className="flex flex-col xl:flex-row items-start xl:items-center gap-5 w-full">
-                            <div className="flex gap-x-2">
+                        <div className="grid grid-cols-2 gap-5 w-full">
+                            <div className="flex flex-col gap-x-2">
                                 <h6 className="text-sm text-[#D4D4D8]">Email:</h6>
                                 <div className="flex flex-col items-start">
                                     <a href="mailto:info@softles.com?cc=hr@softles.in" className="text-md font-medium underline hover:text-[#DC4242] transition">
@@ -43,7 +43,7 @@ export default function Footer() {
                                     </a>
                                 </div>
                             </div>
-                            <div className="flex gap-x-2">
+                            <div className="flex flex-col gap-x-2">
                                 <h6 className="text-sm text-[#D4D4D8]">Phone:</h6>
                                 <div className="flex flex-col items-start">
                                     <a href="tel:+918954000202" className="text-md font-medium underline hover:text-[#DC4242] transition">

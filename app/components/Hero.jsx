@@ -41,7 +41,8 @@ export default function Hero() {
 
     return (
         <section
-            className="relative min-h-[70vh] lg:min-h-[92vh] w-full flex items-center justify-center py-20 lg:py-0 overflow-hidden bg-gradient-to-br from-[#191C26] via-[#23263a] to-[#111319]"
+            id="hero"
+            className="snap-start relative min-h-screen lg:min-h-[92vh] w-full flex items-center justify-center px-5 sm:px-6 lg:px-[120px] pt-20 overflow-hidden bg-gradient-to-br from-[#191C26] via-[#23263a] to-[#111319]"
         >
             {/* Animated awe-struck blob */}
             <div
@@ -61,27 +62,27 @@ export default function Hero() {
                 }}
                 aria-hidden="true"
             />
-            <div className="flex flex-col items-center justify-center w-full my-10">
-                <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-4xl lg:max-w-6xl mx-auto gap-12 lg:gap-20 z-10 px-[10px] md:px-8 lg:px-[120px] xl:px-0">
+            <div className="flex flex-col items-center justify-center w-full lg:my-10">
+                <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full max-w-4xl lg:max-w-6xl mx-auto gap-2 lg:gap-20 z-10 px-[10px] md:px-8 lg:px-[120px] xl:px-0">
                     {/* Left Content */}
-                    <div className="flex-1 flex flex-col items-center lg:items-start justify-center max-w-2xl text-center lg:text-left">
+                    <div className="flex-1 flex flex-col items-center lg:items-start justify-center max-w-2xl text-center lg:text-left max-h-min min-h-10">
                         {/* Creative Ideas Label (updated copy) */}
-                        <div className="flex items-center mb-6">
+                        <div className="flex items-center mb-2 md:mb-6">
                             <span className="block w-12 h-0.5 bg-[#F5F6FA] mr-4" />
                             <span className="text-base text-[#BCC1CA] font-normal">We&apos;re a small agency which</span>
                         </div>
                         {/* Main Heading */}
-                        <h1 className="font-extrabold mb-2 leading-tight tracking-tight relative text-[clamp(2.2rem,6vw,4.5rem)] text-[#F5F6FA]">
+                        <h1 className="font-extrabold md:mb-2 leading-3 md:leading-tight tracking-tight relative text-[clamp(2.2rem,6vw,4.5rem)] text-[#F5F6FA]">
                             Bespoke Business <br className="hidden sm:block" />
                             Solutions
                             <span className="text-[#DC4242] align-super text-5xl ml-1">.</span>
                         </h1>
                         {/* Supporting Line */}
-                        <p className="text-[#BCC1CA] mt-4 mb-10 max-w-xl block text-base lg:text-lg leading-relaxed" style={{maxWidth: '40ch', lineHeight: 1.5}}>
+                        <p className="text-[#BCC1CA] mt-4 mb-5 md:mb-12 max-w-xl block text-base lg:text-lg leading-relaxed" style={{maxWidth: '40ch', lineHeight: 1.5}}>
                             We create new design for your online business with the support of our wonderful team of professionals.
                         </p>
                         {/* CTAs on one line */}
-                        <div className="flex justify-center lg:justify-start w-full mt-2 max-w-xs">
+                        <div className="flex justify-center lg:justify-start w-full max-w-xs">
                             <div onClick={e => handleClick(e, "book-call")} className="relative">
                                 <button
                                     className="flex items-center text-lg whitespace-nowrap group relative shadow-[inset_0_0_0_2px_#616467] text-[#DC4242] px-4 md:px-8 py-2 md:py-4 rounded-full uppercase font-bold bg-transparent hover:bg-[#616467] transition duration-300"
@@ -102,7 +103,7 @@ export default function Hero() {
                         </div>
                     </div>
                     {/* Right Illustration with diagonal divider */}
-                    <div className="flex-1 flex items-center justify-center w-full max-w-md lg:max-w-lg xl:max-w-xl mt-8 lg:mt-0 relative">
+                    <div className="flex-1 flex items-center justify-center w-full max-w-md lg:max-w-lg xl:max-w-xl lg:mt-0 relative">
                         {/* Diagonal divider */}
                         <svg className="hidden lg:block absolute -left-24 top-0 h-full w-48 z-10" viewBox="0 0 100 100" preserveAspectRatio="none">
                             <polygon points="100,0 100,100 0,100" fill="#23263a" opacity="0.7" />
@@ -119,7 +120,7 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* Client Logo Rail - responsive */}
-                <div className="w-full mt-10 md:mt-20 z-20">
+                <div className="w-full mt-5 md:mt-20 z-20 flex flex-col gap-8 md:gap-12">
                     <div className="overflow-hidden w-full relative">
                         <div
                             className="flex animate-logo-rail whitespace-nowrap w-max gap-20"
@@ -138,16 +139,16 @@ export default function Hero() {
                             ))}
                         </div>
                     </div>
+                                {/* Scroll prompt */}
+            <div className="flex flex-col items-center z-20">
+                <span className="text-[#BCC1CA] text-sm animate-bounce">↓ Scroll to explore our services</span>
+            </div>
                 </div>
             </div>
             {/* Decorative Background Elements */}
             <div className="absolute top-0 left-0 w-72 h-72 bg-[#DC4242]/20 rounded-full blur-3xl -z-10" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#DC4242]/10 rounded-full blur-3xl -z-10" />
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-[#191C26]/40 to-[#DC4242]/10 pointer-events-none -z-10" />
-            {/* Scroll prompt */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center z-20">
-                <span className="text-[#BCC1CA] text-sm animate-bounce">↓ Scroll to explore our services</span>
-            </div>
             <style jsx global>{`
                 @keyframes pulse-slow {
                     0%, 100% { opacity: 1; }
